@@ -19,7 +19,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "https://seubarriga.wcaquino.me/login",
+    baseUrl: "https://buger-eats.vercel.app/",
     chromeWebSecurity: false,
   },
   fixturesFolder: false,

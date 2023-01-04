@@ -1,7 +1,7 @@
 {
-  "name": "projeto-ubereats-cypress-cucumber",
+  "name": "projeto-bugerEats-cypress-cucumber",
   "version": "1.0.0",
-  "description": "Projeto na uberEats com cypress e cucumber",
+  "description": "Projeto na bugerEats com cypress e cucumber",
   "main": "cypress.config.js",
   "scripts": {
     "test": "cypress open"
