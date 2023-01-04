@@ -1,0 +1,32 @@
+{
+  "name": "projeto-ubereats-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Projeto na uberEats com cypress e cucumber",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsRodrigo/projeto-uberEats-cypress-cucumber.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "nsRodrigo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsRodrigo/projeto-uberEats-cypress-cucumber/issues"
+  },
+  "homepage": "https://github.com/nsRodrigo/projeto-uberEats-cypress-cucumber#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.3.0",
+    "cypress-plugin-api": "^2.9.0",
+    "cypress-real-events": "^1.7.6",
+    "esbuild": "^0.16.13",
+    "multiple-cucumber-html-reporter": "^3.0.2"
+  }
+}

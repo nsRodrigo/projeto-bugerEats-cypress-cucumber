@@ -1,0 +1,6 @@
+cucumber-json-formatter.exe
+cypress.env.json
+cypress/downloads/
+cypress/screenshots/
+videos
+node_modules/
