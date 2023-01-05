@@ -12,7 +12,7 @@ Iniciar o cypress:
 Criar arquivo package.json
 1. Executar o comando 'npm init -y'
 
-Intalar cucumber-preprocessor -> https://github.com/badeball/cypress-cucumber-preprocessor
+Instalar cucumber-preprocessor -> https://github.com/badeball/cypress-cucumber-preprocessor
 1. Executar o comando 'npm i -D @badeball/cypress-cucumber-preprocessor'
 
 Instalar esbuild-preprocessor -> https://github.com/bahmutov/cypress-esbuild-preprocessor
@@ -24,7 +24,7 @@ module.exports = (on, config) => {
   on('file:preprocessor', createBundler())
 }
 
-Intalar plugin real-events -> https://github.com/dmtrKovalenko/cypress-real-events
+Instalar plugin real-events -> https://github.com/dmtrKovalenko/cypress-real-events
 1. Executar comando 'npm i -D cypress-real-events'
 2. Adiconar no arquivo E2E.js o import:
 
@@ -50,8 +50,9 @@ require('@cypress/xpath');
 
 Instalar multiple-cucumber-html-reporter
 1. Executar o comando 'npm i -D @types/multiple-cucumber-html-reporter'
-2. Criar cucumber-html-report.js
-3. 
+2. Criar arquivo cucumber-html-report.js
+3. Incluir no arquivo cucumber-html-report.js
+
 const report = require("multiple-cucumber-html-reporter");
 
 report.generate({

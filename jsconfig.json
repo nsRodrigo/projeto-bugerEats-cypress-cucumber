@@ -3,7 +3,7 @@
         "baseUrl": ".",
         "paths": {
             "@pages/*": [
-                "./cypress/pages/*"
+                "./cypress/e2e/pages/*"
             ]
         }
     }
