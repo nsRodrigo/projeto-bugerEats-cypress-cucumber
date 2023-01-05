@@ -2,26 +2,51 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { homePage } from "@pages/HomePage";
 
 
-Given(/^que acesso a aplicação$/, () => {
+Given(/^that I access the application$/, () => {
 	homePage.acessarUrl()
 });
 
-When(/^visualizar o titulo "([^"]*)"$/, (titulo) => {
+When(/^to view the title "([^"]*)"$/, (titulo) => {
     homePage.validarTituloPage(titulo);
 });
 
-Then(/^eu visualizo o logo da BugerEats$/, () => {
+
+Then(/^i see the BugerEats logo$/, () => {
 	homePage.validarLogoHome();
 });
 
-Then(/^eu visualizo o titulo "([^"]*)"$/, (tituloHome) => {
+Then(/^i see the title "([^"]*)"$/, (tituloHome) => {
 	homePage.validarTituloHome(tituloHome);
 });
 
-Then(/^eu visualizo o sub-titulo "([^"]*)"$/, (subTituloHome) => {
+Then(/^i see the subtitle "([^"]*)"$/, (subTituloHome) => {
 	homePage.validarSubTituloHome(subTituloHome);
 });
 
-Then(/^eu visualizo o botão "Cadastre-se para fazer entregas'$/, () => {
+Then(/^i visualize the button "Cadastre-se para fazer entregas'$/, () => {
 	homePage.validarBotaoCadastreSe();
 });
+
+
+
+When(/^eu visualizar o layout do botão$/, () => {
+	homePage.validatePrimaryColorButton();
+});
+
+When(/^posicionar o mouse em cima do botão$/, () => {
+	homePage.hoverOnButton();
+});
+
+Then(/^eu visualizo a alteração do layout do botão$/, () => {
+	homePage.validateLayoutButtonChange();
+});
+
+
+
+When(/^eu clicar no botão$/, () => {
+	homePage.buttonClick();
+});
+
+
+
+

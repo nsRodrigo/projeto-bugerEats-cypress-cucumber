@@ -1,21 +1,23 @@
-Feature: Validar Home
-Como cliente
-Quero acessar a pagina https://buger-eats.vercel.app/
-Para efetuar compras no site
+Feature: Validade Home
+How client
+I Want access the page https://buger-eats.vercel.app/
+To be able to buy on the website
 
-  Background: Acessar aplicação
-    Given que acesso a aplicação
+  Background: Access application
+    Given that I access the application
 
-  Scenario: Validar acesso a home da BugerEats
-    When visualizar o titulo "Buger Eats"
-    Then eu visualizo o logo da BugerEats
-    And eu visualizo o titulo "Seja um parceiro entregador pela Buger Eats"
-    And eu visualizo o sub-titulo "Em vez de oportunidades tradicionais de entrega de refeições em horários pouco flexíveis, seja seu próprio chefe."
-    And eu visualizo o botão "Cadastre-se para fazer entregas'
+  Scenario: Validade the access to the BugerEats home page
+    When to view the title "Buger Eats"
+    Then i see the BugerEats logo
+    And i see the title "Seja um parceiro entregador pela Buger Eats"
+    And i see the subtitle "Em vez de oportunidades tradicionais de entrega de refeições em horários pouco flexíveis, seja seu próprio chefe."
+    And i visualize the button "Cadastre-se para fazer entregas'
 
-  Scenario: Validar comportamento do botão 'cadastre-se para fazer entregas'
-    When posicionar o mouse em cima do botão "Cadastre-se para fazer entregas'
-    Then eu visualizo a alteração do layout do botão
-    And eu visualizo o titulo "Seja um parceiro entregador pela Buger Eats"
-    And eu visualizo o sub-titulo "Em vez de oportunidades tradicionais de entrega de refeições em horários pouco flexíveis, seja seu próprio chefe."
-    And eu visualizo o botão "Cadastre-se para fazer entregas'
+  Scenario: Validade behavor button 'cadastre-se para fazer entregas'
+    When i visualize the button layout 
+    And position the mouse over the button
+    Then i visualize the button layout change
+
+Scenario: Validate targeting on button click 'cadastre-se para fazer entregas'
+    When i click button
+    Then i see the title "Cadastre-se para  fazer entregas"
