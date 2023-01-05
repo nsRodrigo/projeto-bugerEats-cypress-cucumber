@@ -1,4 +1,4 @@
-# projeto-uberEats-cypress-cucumber
+# projeto-bugerEats-cypress-cucumber
 Projeto na Uber Eats com cypress e cucumber
 
 Instalar o cypress:
