@@ -1,49 +1,51 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { homePage } from "@pages/HomePage";
 
+/* Access application */
 
-Given(/^that I access the application$/, () => {
-	homePage.acessarUrl()
+Given(/^that i access the application$/, () => {
+	homePage.accessUrl()
 });
 
-When(/^to view the title "([^"]*)"$/, (titulo) => {
-    homePage.validarTituloPage(titulo);
-});
+/* Validade the access to the BugerEats home page */
 
+When(/^to view the title "([^"]*)"$/, (title) => {
+    homePage.validatePageTitle(title);
+});
 
 Then(/^i see the BugerEats logo$/, () => {
-	homePage.validarLogoHome();
+	homePage.validateHomeLogo();
 });
 
-Then(/^i see the title "([^"]*)"$/, (tituloHome) => {
-	homePage.validarTituloHome(tituloHome);
+Then(/^i see the title "([^"]*)"$/, (homeTitle) => {
+	homePage.validateHomeTitle(homeTitle);
 });
 
-Then(/^i see the subtitle "([^"]*)"$/, (subTituloHome) => {
-	homePage.validarSubTituloHome(subTituloHome);
+Then(/^i see the subtitle "([^"]*)"$/, (subTitle) => {
+	homePage.validateHomeSubTitle(subTitle);
 });
 
 Then(/^i visualize the button "Cadastre-se para fazer entregas'$/, () => {
-	homePage.validarBotaoCadastreSe();
+	homePage.validateButton();
 });
 
+/* Validade behavor button 'cadastre-se para fazer entregas' */
 
-
-When(/^eu visualizar o layout do botão$/, () => {
+When(/^i visualize the button layout$/, () => {
 	homePage.validatePrimaryColorButton();
 });
 
-When(/^posicionar o mouse em cima do botão$/, () => {
+When(/^position the mouse over the button$/, () => {
 	homePage.hoverOnButton();
 });
 
-Then(/^eu visualizo a alteração do layout do botão$/, () => {
+Then(/^i visualize the button layout change$/, () => {
 	homePage.validateLayoutButtonChange();
 });
 
+/*	Validate targeting on button click 'cadastre-se para fazer entregas' */
 
-
-When(/^eu clicar no botão$/, () => {
+When(/^i click button$/, () => {
 	homePage.buttonClick();
 });
 

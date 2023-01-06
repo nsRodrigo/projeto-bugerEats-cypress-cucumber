@@ -3,54 +3,76 @@ class HomePage{
     elements = {
 
         imageLogo: () => cy.get('img'),
-        tituloHome: () => cy.get('h1'),
-        subTituloHome: () => cy.get('p'),
-        botaoCadastreSe: () => cy.get('a'),
+        homeTitle: () => cy.get('h1'),
+        homeSubTitle: () => cy.get('p'),
+        button: () => cy.get('a'),
 
     }
 
-    acessarUrl() {
+    /* method to access url */
+
+    accessUrl() {
         cy.visit("/");
     }
 
-    validarTituloPage(titulo) {
-        cy.title("have.text", titulo);
+    /* mehtod to validate the page title */
+
+    validatePageTitle(title) {
+        cy.title("have.text", title);
     }
 
-    validarLogoHome() {
+    /* method to validate the logo of home page */
+
+    validateHomeLogo() {
         this.elements.imageLogo().should("be.visible");
     }
 
-    validarTituloHome(tituloHome) {
-        this.elements.tituloHome().should("have.text", tituloHome);
+    /* method to validate the title in the home page */
+
+    validateHomeTitle(homeTitle) {
+        this.elements.homeTitle().should("have.text", homeTitle);
     }
 
-    validarSubTituloHome(subTituloHome) {
-        this.elements.subTituloHome().should("have.text", subTituloHome);
+    /* method to validate the subtitle in the home page */
+
+    validateHomeSubTitle(subTitle) {
+        this.elements.homeSubTitle().should("have.text", subTitle);
     }
 
-    validarBotaoCadastreSe() {
-        this.elements.botaoCadastreSe().should("be.visible")
+    /* method to validate that the button be visible */
+    
+    validateButton() {
+        this.elements.button().should("be.visible")
     }
+
+    /* method to position mouse over the button */
 
     hoverOnButton(){
-        this.elements.botaoCadastreSe().realHover()
+        this.elements.button().realHover()
     }
+
+    /* method to validate the button layout after put the mouse on button */
 
     validateLayoutButtonChange(){
-        this.elements.botaoCadastreSe().should("have.css", "background-color", "rgb(47, 184, 110)")
+        this.elements.button().should("have.css", "background-color", "rgb(47, 184, 110)")
     }
+
+    /* method to getout the mouse over the button */
 
     hoverOffButton(){
-        this.elements.botaoCadastreSe().next().realHover()
+        this.elements.button().next().realHover()
     }
+
+    /* method to validate the primary color button */
 
     validatePrimaryColorButton(){
-        this.elements.botaoCadastreSe().should("have.css", "background-color", "rgb(52, 203, 121)")
+        this.elements.button().should("have.css", "background-color", "rgb(52, 203, 121)")
     }
 
+    /* method to click button */
+
     buttonClick() {
-        this.elements.botaoCadastreSe().click()
+        this.elements.button().click()
     }
 
 }
