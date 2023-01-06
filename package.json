@@ -24,6 +24,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@cypress/xpath": "^2.0.3",
     "cypress": "^12.3.0",
+    "cypress-file-upload": "^5.0.8",
     "cypress-plugin-api": "^2.9.0",
     "cypress-real-events": "^1.7.6",
     "esbuild": "^0.16.13",

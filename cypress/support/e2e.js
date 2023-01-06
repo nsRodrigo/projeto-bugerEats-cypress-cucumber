@@ -20,6 +20,8 @@ import "cypress-real-events";
 
 import 'cypress-plugin-api';
 
+import 'cypress-file-upload'
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 

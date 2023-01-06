@@ -7,7 +7,7 @@ To be able to buy on the website
     Given that i access the application
 
   Scenario: Validate the access to the BugerEats home page
-    When to view the title "Buger Eats"
+    When to view the title "BugerEats"
     Then i see the BugerEats logo
     And i see the title "Seja um parceiro entregador pela Buger Eats"
     And i see the subtitle "Em vez de oportunidades tradicionais de entrega de refeições em horários pouco flexíveis, seja seu próprio chefe."

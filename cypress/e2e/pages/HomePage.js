@@ -18,7 +18,7 @@ class HomePage{
     /* mehtod to validate the page title */
 
     validatePageTitle(title) {
-        cy.title("have.text", title);
+       cy.title("have.text", title);
     }
 
     /* method to validate the logo of home page */

@@ -10,7 +10,7 @@ Given(/^that i access the application$/, () => {
 /* Validade the access to the BugerEats home page */
 
 When(/^to view the title "([^"]*)"$/, (title) => {
-    homePage.validatePageTitle(title);
+	homePage.validatePageTitle(title);
 });
 
 Then(/^i see the BugerEats logo$/, () => {
