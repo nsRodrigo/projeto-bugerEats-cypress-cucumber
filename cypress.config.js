@@ -22,5 +22,5 @@ module.exports = defineConfig({
     baseUrl: "https://buger-eats.vercel.app/",
     chromeWebSecurity: false,
   },
-  fixturesFolder: false,
+  fixturesFolder: "cypress/fixtures",
 });
